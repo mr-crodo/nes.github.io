@@ -19,7 +19,7 @@ body {
     background-color: #1e4776;
 
     /* sdes stavim fon */
-    background-image: url(/js-basics/assets/img/header-bg.jpg);
+    background-image: url(/assets/img/header-bg.jpg);
     /* ctob fon ne povtoralsa */
     background-repeat: no-repeat;
     /* pozicioniruem eqo po centru */
