@@ -1,36 +1,42 @@
 "use strict";
 
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+// day 4
 
-// $(document).ready(function () {
-//   const nMenuBtn = $(".m-menu-button");
-//   const nMenu = $(".m-menu");
-//   nMenuBtn.on('click', function () {
-//     nMenu.toggleClass('active');
-//     $('body').toggleClass('no-scroll');
-//   });
-// });
-// $('.one-time').slick({
-//   dots: true,
-//   infinite: true,
-//   speed: 300,
-//   slidesToShow: 1,
-//   adaptiveHeight: true
-// });
-// const obj = {
-//   name: "John",
-//   age: 25,
-//   isMarried: false,
-// };
-// console.log(obj);
-// alert ('Hello');
-//const result = confirm('Are yo here?'); // Задает вопрос и выходит два выбора ответа
-// console.log(result);
-var ansver = []; // Задает вопрос и выходит место для вставки или написания своего ответа
-// ansver[0] = prompt('Как ваше имя?', '');
-// ansver[1] = prompt('Как ваше фамилия?', '');
-// ansver[2] = prompt('Сколько вам лет?', '');
-// document.write(ansver);
+//! Это инторполяция в ES6 использовалось раньше так:
+// ?  const category = 'toys';
+//?   console.log('`https://mrcrodo.com/' + '/' + '5');
 
-console.log(_typeof(ansver));
-console.log(_typeof(null));
+
+// const category = 'toys';
+
+// console.log(`https://mrcrodo.com/${category}/5`);
+
+// const user = "Ivan";
+
+// alert(`Привет, ${user}`);
+
+// ***************************
+// Если мы число прибавляем к числовому выражению в ковычках то получается
+// 55 а точнее строка как бы строки присоединяются
+// console.log(typeof(5 + "5"));
+// Но есди мы перед тем значением что в кавычках поставим +
+// тогда получаем число
+// console.log(5 + +"7");
+// в члучае же умножения мы получаем число
+// сы получам число в обоих члуяаях когда число на число и когда число на члово
+//  в обоих случаях получем числовой тип значения
+// console.log(typeof(5 * "7"));
+// console.log(typeof(5 * "Hello"));
+
+
+
+let incr =  10,
+    decr = 10;
+
+    incr++; // операция инкриента или увелисения значения  на 1
+    decr--;  // операция декремента или уменшения хначения на 1
+
+    console.log(incr);
+    console.log(decr);
+    
+    console.log(typeof 7);
