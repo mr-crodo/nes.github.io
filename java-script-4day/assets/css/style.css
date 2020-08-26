@@ -1,0 +1,284 @@
+@font-face {
+  font-family: 'San Francisco', sans-serif;
+  src: url(/assets/fonts/SanFrancisco/San\ Francisco-Black.otf);
+  src: url(/assets/fonts/SanFrancisco/San\ Francisco-Bold.otf);
+  src: url(/assets/fonts/SanFrancisco/San\ Francisco-Extrabold.otf);
+  src: url(/assets/fonts/SanFrancisco/San\ Francisco-Light.otf);
+  src: url(/assets/fonts/SanFrancisco/San\ Francisco-Medium.otf);
+  src: url(/assets/fonts/SanFrancisco/San\ Francisco-Regular.otf);
+  src: url(/assets/fonts/SanFrancisco/San\ Francisco-Semibold.otf);
+  src: url(/assets/fonts/SanFrancisco/San\ Francisco-Thin3.otf);
+  src: url(/assets/fonts/SanFrancisco/San\ Francisco-Ultralight3.otf);
+}
+
+@font-face {
+  font-family: 'Google Sans', sans-serif;
+  src: url(/assets/fonts/GoogleSans/GoogleSans-Bold.eot);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-Bold.ttf);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-Bold.woff);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-Bold.woff2);
+
+  src: url(/assets/fonts/GoogleSans/GoogleSans-BoldItalic.eot);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-BoldItalic.ttf);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-BoldItalic.woff);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-BoldItalic.woff2);
+
+  src: url(/assets/fonts/GoogleSans/GoogleSans-Italic.eot);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-Italic.ttf);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-Italic.woff);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-Italic.woff2);
+
+  src: url(/assets/fonts/GoogleSans/GoogleSans-Medium.eot);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-Medium.ttf);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-Medium.woff);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-Medium.woff2);
+
+  src: url(/assets/fonts/GoogleSans/GoogleSans-MediumItalic.eot);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-MediumItalic.ttf);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-MediumItalic.woff);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-MediumItalic.woff2);
+
+  src: url(/assets/fonts/GoogleSans/GoogleSans-Regular.eot);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-Regular.ttf);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-Regular.woff);
+  src: url(/assets/fonts/GoogleSans/GoogleSans-Regular.woff2);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #363636;
+}
+
+button {
+  outline: none;
+}
+
+/*TODO: knopka dla mobile */
+
+.mobile-buttons {
+  display: none;
+}
+
+.m-menu-button {
+  /* width: 20px;
+  height: 20px; */
+  padding: 5px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+
+  /* sam postavil */
+
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-top: 0;
+}
+
+
+.m-menu-button .menu-line {
+  display: block;
+  width: 42px;
+  height: 8px;
+  background-color: #4745B3;
+  /* flex-basis: 16px; */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 40px;
+}
+
+/* TODO: Header  */
+.header {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  background: #6563FF;
+  justify-content: space-around;
+  height: 104px;
+  padding-left: 34px;
+  /* dla toqo ctobi sdelat polosku snizu */
+  border-bottom: 1px solid #d4d4d4;
+  /* background-color: #f2f2f2; */
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ width: 1180px;
+  /* margin-right: auto;
+  margin-left: auto; */
+}
+
+
+.m-menu {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+}
+
+.header-icon {
+  height: 100%;
+  fill: #fff;
+}
+
+.header-icon:hover {
+  fill: rgb(148, 255, 127);
+}
+
+.header-icon:active {
+  fill: aqua;
+}
+
+.line {
+  height: 100%;
+  width: 1px;
+  background-color: #d4d4d4;
+  margin-left: 34px;
+}
+
+
+/* .search-input:focus {
+  outline-style: dotted;
+} */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: 44px;
+  margin-left: auto;
+  height: 80px;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.navigation-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+
+  /* text-align: center;
+  display: flex;
+  height: 80px;
+  align-items: center; */
+
+  position: relative;
+
+  font-size: 18px;
+  line-height: 21px;
+  color: #363636;
+  margin-right: 18px;
+}
+
+.navigation-link::after {
+  content: "";
+  position: absolute;
+  /* width: 0%; */
+  width: 100%;
+  bottom: 0;
+  /* right: 0; */
+  left: 0;
+  /* transition: width 0.2s; */
+  transition: transform 0.2s;
+  transform: scaleX(0);
+
+  height: 1px;
+  background-color: #000;
+}
+
+.navigation-link:hover::after {
+  /* width: 100%; */
+  transform: scaleX(1);
+
+  /* при наведении курсора мышки */
+  /* font-weight: 900; */
+}
+
+.navigation-link:hover {
+  color: rgb(40, 58, 218);
+}
+
+.navigation-link:active {
+  color: rgb(72, 194, 47);
+
+  /* при нажатии */
+}
+
+/* .navigation-link:focus {
+  color: rgb(187, 12, 12); 
+   пока кнопка в фокусе, то есть когда пользователь нажал на кнопку, но ещё не щёлкнул курсором мышки в другое место окна браузера. Без :focus невозможно объединить visibility: hidden; и transition. Если слишком быстро убрать мышку, то элемент повиснет в "половинном" состоянии, например, ссылка будет прозрачна, но по ней можно делать переход.
+} */
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  /* height: 100%; */
+}
+
+.button {
+  /* height: 100%; */
+  cursor: pointer;
+}
+
+.sign-up {
+  
+  
+  background: #ffffff;
+	border-radius: 5px;
+	text-align: center;
+	align-items: center;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-right: 30px;
+	padding-left: 30px;
+	font-family: "San Francisco", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.4;
+	/* or 22px */
+
+	color: #6563ff;
+  
+  
+  /* Inside Auto Layout */
+  
+
+
+  /* font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  border: none;
+  background-color: #fff;
+  color: #5671f6;
+  padding-left: 34px;
+  padding-right: 34px;
+  border-left: 1px solid #d4d4d4; */
+}
+
+.sign-up:hover {
+  background-color: rgba(71, 194, 47, 0.699);
+  color: #ffffff;
+}
+
+.sign-up:active {
+  background-color: #56d6f6;
+  color: #fff;
+}
+
+
+
+
+
