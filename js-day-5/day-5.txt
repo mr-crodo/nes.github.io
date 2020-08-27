@@ -1,0 +1,10 @@
+Сегодня пройдем курс про Git and Github
+
+git init - для инициализации папки проекта
+git config --local user.name "Nasib" - представляемся локально для того чтобы было понятно кто делает изменения
+git config --local user.email example@gmail.com - тоже для инициализации используется в паре с верхней командой
+git add *.css - esli mi xotim soxranit vse fayli opredellinnoqo rashireniya
+
+
+COMMIT
+git commit -a -m" kratkoeopisanie toqo cto mi sdelali na etoy kontrolnoy tocke" : -a oznacaet cto ko vsem faylam otnositsa, -m obezatelnaya komanda oboznacaet message ili opisaniya
