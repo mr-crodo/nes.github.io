@@ -1,1 +1,2 @@
-# nes01.github.io
+# nes.github.io
+Hello Guys. This my first practice repository for JS.
